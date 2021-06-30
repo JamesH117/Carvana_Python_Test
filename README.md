@@ -2,6 +2,7 @@
 ## Document of test copy/paste
 
 2. Operating Hours Calculation
+
 There is a warehouse in CarvanaLand. Trucks come and leave at anytime of the day, and are
 loaded with packages at the warehouse. Behind the scene, there is an online platform that
 continuously taking in new orders from customers. Each order comes with a delivery due date.
@@ -29,6 +30,7 @@ start loading at 3:00pm today, work for one hour, and continue with the rest of 
 loading work 8:00 ~ 10:00 am tomorrow. The difference between the two
 options/configurations is whether the loading time has to be a continuous chunk of time
 or not.
+
 Exercise:
 Write a python script that takes the following inputs:
 1. Loader work hours
@@ -38,6 +40,7 @@ Write a python script that takes the following inputs:
 5. Does the loading time have to be on the same day or not?
 The script is expected to export a datetime string which tells the manager when she should give
 the loader a list of delivery packages.
+
 Example 1:
 Inputs:
 1. Work hours: 08:00 ~ 14:00
@@ -48,6 +51,7 @@ Inputs:
 Expected Output: 2018-08-11 11:00
 Explanation : The loader has only 2 hours prior to truck departure, and the previous day is a
 Sunday. So the loader will need to start loading the truck on Saturday afternoon.
+
 Example 2:
 Inputs:
 1. Work hours: 08:00 ~ 14:00
@@ -60,33 +64,39 @@ Explanation : The loader has 2 hours prior to truck departure, which he/she can 
 He/she needs one more hour from the previous work day to complete the loading. The day
 before truck departure is a regular workday for this loader. So the loader needs to start loading
 at 13:00 the day before.
+
 Please run your script against the following test cases, and submit your outputs along
 with your code. All outputs are expected to be datetime strings in “%Y-%m-%d %H:%M”
 format.
+
 Test case 1 inputs:
 1. Work hours: 08:00 ~ 14:00
 2. Work days: Monday through Friday
 3. Loading Time: 3 Hours
 4. Truck departure time: 2018-08-15 14:00
 5. Loading time can be spread across different days
+
 Test case 2 inputs:
 1. Work hours: 08:00 ~ 14:00
 2. Work days: Monday through Friday
 3. Loading Time: 3 Hours
 4. Truck departure time: 2018-08-15 14:00
 5. Loading time cannot be spread across different days
+
 Test case 3 inputs:
 1. Work hours: 12:00 ~ 18:00
 2. Work days: Monday, Wednesday, Friday
 3. Loading Time: 3 Hours
 4. Truck departure time: 2018-08-15 10:00
 5. Loading time can be spread across different days
+
 Test case 4 inputs:
 1. Work hours: 08:00 ~ 14:00
 2. Work days: Monday through Saturday
 3. Loading Time: 3.5 Hours
 4. Truck departure time: 2018-08-14 10:00
 5. Loading time can be spread across different days
+
 Test case 5 inputs:
 1. Work hours: 08:00 ~ 14:00
 2. Work days: Monday through Saturday
